@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Enginuity: A Dataset and Benchmark for Vision-Language Understanding of Engineering Diagrams",
+    "authors": "Ethan Seefried et al.",
+    "award": "AI4Science Dataset award",
+    "venue": "NeurIPS 2025",
+    "year": 2025,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=z5yGpwgAAAAJ&sortby=pubdate&citation_for_view=z5yGpwgAAAAJ:LkGwnXOMwfcC",
+    "provenance": "Award details and citation link supplied by the project owner",
+    "category": "Research award",
+    "description": "Recognizing the Enginuity dataset and benchmark for vision-language understanding of engineering diagrams.",
+    "link_label": "View publication citation"
+  },
+  {
+    "title": "SC 2026 Early Career Program",
+    "authors": "Dr. Sanjay Das",
+    "award": "Early Career Program acceptance",
+    "venue": "SC 2026",
+    "year": 2026,
+    "category": "Individual recognition",
+    "description": "Dr. Sanjay Das has been accepted into the SC 2026 Early Career Program.",
+    "url": "",
+    "related_path": "people/",
+    "link_label": "Meet our researchers",
+    "provenance": "Acceptance supplied by the project owner"
+  },
+  {
+    "title": "2026 ORISE Future of Science Awards",
+    "authors": "Dr. Tirthankar Ghosal",
+    "award": "Future of Science Mentor Award",
+    "venue": "ORISE · 2026",
+    "year": 2026,
+    "category": "Individual award",
+    "description": "Recognizing exceptional mentorship of ORISE participants and support for the next generation of STEM researchers. Dr. Ghosal is an ORNL staff scientist and a joint faculty member in the Bredesen Center’s Data Science and Engineering program.",
+    "url": "https://orise.orau.gov/news/archive/2026/orise-announces-winners-of-future-of-science-awards.html",
+    "link_label": "Read the ORISE announcement",
+    "provenance": "Mentor award verified against the ORISE announcement; joint faculty role supplied by project owner"
+  },
+  {
+    "title": "IEEE Quantum Technical Community",
+    "authors": "Oak Ridge National Laboratory",
+    "award": "Distinguished Synergy Award",
+    "venue": "IEEE Quantum Week · Toronto · 2026",
+    "year": 2026,
+    "category": "Institutional award · ORNL",
+    "description": "Awarded to ORNL for collaboration across government, industry, and academia in quantum materials, computing, networking, and sensing. Presented at IEEE Quantum Week in Toronto, the recognition highlights ORNL’s connected expertise, user facilities, leadership-class computing, and Quantum Science Center partnerships.",
+    "url": "https://www.ornl.gov/news/ieee-honors-ornl-quantum-ecosystem-collaborations/",
+    "link_label": "Read the ORNL announcement",
+    "provenance": "Institutional recipient and award context verified against ORNL announcement"
+  }
+]

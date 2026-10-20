@@ -1,0 +1,31 @@
+{
+  "title": "Leadership, collaborators & support",
+  "overview": "AI for Laboratory Operations is a unified ecosystem of AI tools that transforms raw data into actionable, evidence-backed intelligence in support of ORNL Operations and associated stakeholders.",
+  "leadership": "Led by Principal Investigator Dr. Tirthankar Ghosal (Staff Scientist), the research and development team includes Dr. Sanjay Das (Postdoctoral Researcher; lead R&D personnel), Dr. Ran Edgeway (PhD GRO intern), and Dr. Ethan Seefried (Postdoctoral Researcher), from the Learning Systems group, Computer Science and Mathematics Division (CSMD), Computing and Computational Sciences Directorate (CCSD).",
+  "operations": "Integral collaborators from ORNL Operations include Ryan Burchfield, Lauren Deck, Alan Guy, Gavin Wiggins, and 25+ subject-matter experts across ORNL Operations divisions.",
+  "engineering": "A software team from ITSD supports the AI team in making the tools enterprise-ready. PI Ghosal holds regular one-to-one meetings with ITSD and Operations leadership to coordinate tool progress and launch.",
+  "symposia": [
+    {
+      "date": "March 2026",
+      "title": "2nd AI4Ops Symposium",
+      "body": "PI Ghosal and ITSD colleagues presented and demonstrated in-progress tools at the 2nd AI4Ops Symposium, organized by LANL in Santa Fe."
+    },
+    {
+      "date": "2027",
+      "title": "3rd AI4Ops Symposium",
+      "body": "ORNL will organize the third AI4Ops Symposium in 2027."
+    }
+  ],
+  "sailor": {
+    "name": "SAILOR",
+    "expansion": "Smart AI for Laboratory Operations and Reconnaissance",
+    "body": "PI Ghosal is working with Chief Operating Officers from ORNL, PNNL, SRNL, and INL to extend this initiative across the DOE ecosystem through a Community of Practice and a Consortium of Battelle Laboratories.",
+    "status": "Community and consortium development in progress"
+  },
+  "sponsors": [
+    "Office of the Laboratory Director",
+    "Operational Excellence Initiatives"
+  ],
+  "doe": "U.S. Department of Energy (DOE)",
+  "provenance": "Leadership, collaboration, sponsorship, and symposium details supplied by the project owner."
+}

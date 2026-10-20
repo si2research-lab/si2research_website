@@ -1,0 +1,224 @@
+[
+  {
+    "slug": "safelens-reading-between-the-records",
+    "tag": "JCDL 2026 · Research story",
+    "title": "SafeLens: reading between the safety records",
+    "summary": "A near-miss report is one observation. Hundreds of thousands of reports can become organizational memory—if we know how to ask useful questions.",
+    "related": "projects/ai4labops/tools/safelens/",
+    "reading_time": "4 min read",
+    "announcement": "Published at JCDL 2026",
+    "sections": [
+      {
+        "heading": "The signal is already there",
+        "body": "Imagine three reports written months apart: a crowded walkway, equipment blocking access, and a near miss during a delivery. Individually, each deserves attention. Together, they might reveal a recurring problem. This illustrative example captures the challenge: organizations have the observations, but connecting them takes work."
+      },
+      {
+        "heading": "A count tells you how much—not what to investigate",
+        "body": "SafeLens analyzes a collection of 468,397 safety records spanning 11 years. A chart can show an increase in observations; the descriptions explain what people actually noticed. The system combines fast, deterministic statistics with AI analysis on demand, helping reviewers move from an organizational overview to a particular building, period, or interaction type. [1]"
+      },
+      {
+        "heading": "Four layers, one practical workflow",
+        "body": "First, records are cleaned and stored in a compact Parquet file. Second, filters produce the relevant slice and its statistics. Third, a representative sample goes to a language model, which returns ranked risks, recurring patterns, and good practices. Finally, a dashboard lets users inspect insights, browse records, ask follow-up questions, and export a report. Think of it as a librarian who narrows the shelf before helping you read. [1]"
+      },
+      {
+        "heading": "Why sampling deserves a starring role",
+        "body": "A model cannot reliably read the entire archive at once. But a random handful may miss uncommon record types. SafeLens uses Stratified Adaptive Query Sampling (SAQS): divide records by their existing interaction-type labels, allocate slots proportionally with a minimum floor, and sample within each group. The default budget is 300 records. This aims to preserve category diversity; it does not guarantee finding every rare hazard. Field observations and safety conversations also remain distinguishable, because they describe different kinds of evidence. [1]"
+      },
+      {
+        "heading": "An insight is an invitation to look closer",
+        "body": "The interface presents risky behaviors, common patterns, and best practices side by side. Each insight includes context and a supporting excerpt. Reviewers can return to individual records or ask a follow-up question. In the paper’s usage discussion, managers treat the ranked list as an agenda for investigation, sometimes promoting an item that their domain knowledge makes important. The useful outcome is a better-informed review, with the human still deciding what warrants action. [1]"
+      },
+      {
+        "heading": "What the deployment reports",
+        "body": "Across 136 evaluation runs, the paper reports an average response time of 19.49 seconds and a 6.6% system error rate. All 20 explicit feedback submissions were positive. Its definition of an error includes blank outputs, disrupted workflows, and freezes; it is not a measure of factual error in generated insights. [1]"
+      },
+      {
+        "heading": "Encouraging evidence, with clear boundaries",
+        "body": "Twenty positive ratings are useful early feedback, not proof of universal satisfaction or factual accuracy. The study reports a deployed demonstration rather than a controlled test of accident reduction. Its strongest practical lesson is that filtering, sampling, traceable excerpts, and expert review matter alongside the language model. Future work includes token-aware sampling and stronger handling of institution-specific terminology. [1]"
+      }
+    ],
+    "resources": [
+      {
+        "label": "Read ACM paper",
+        "url": "https://dl.acm.org/doi/full/10.1145/3805696.3846509"
+      },
+      {
+        "label": "Read supplied PDF",
+        "path": "artifacts/safelens/3805696.3846509.pdf"
+      },
+      {
+        "label": "Explore tool & demo",
+        "path": "projects/ai4labops/tools/safelens/"
+      }
+    ],
+    "resources_heading": "Paper & demonstration",
+    "bibliography": [
+      {
+        "text": "Sanjay Das, Ryan Burchfield, Gavin Wiggins, Alan Guy, and Tirthankar Ghosal. 2026. SafeLens: AI-Augmented Exploratory Analysis over Organizational Safety Records for Actionable Insights Generation. In The 2026 ACM/IEEE Joint Conference on Digital Libraries (JCDL ’26), Frisco, TX, USA, October 13–16, 2026. ACM, 5 pages. DOI: 10.1145/3805696.3846509.",
+        "url": "https://doi.org/10.1145/3805696.3846509"
+      }
+    ],
+    "provenance": "Verified against the owner-supplied published PDF artifacts/safelens/3805696.3846509.pdf. Images extracted unchanged from Figure 1 and Figure 2(b); evaluation from Table 2 and Section 6. Illustrative opening example is editorial.",
+    "figures": [
+      {
+        "path": "assets/blog/safelens-paper-architecture.png",
+        "alt": "SafeLens Figure 1: data preparation, query filtering, AI insight generation, and presentation layers.",
+        "caption": "Figure 1 from Das et al. [1]. Four layers connect organizational records to reviewable insights.",
+        "source": "https://dl.acm.org/doi/full/10.1145/3805696.3846509",
+        "after_section": 1
+      },
+      {
+        "path": "assets/blog/safelens-paper-interface.png",
+        "alt": "SafeLens Figure 2b: executive summary and side-by-side panels for risks, patterns, and best practices.",
+        "caption": "Figure 2(b) from Das et al. [1]. The AI Analysis view presents an executive summary and three insight categories.",
+        "source": "https://dl.acm.org/doi/full/10.1145/3805696.3846509",
+        "after_section": 4
+      }
+    ],
+    "results": {
+      "after_section": 5,
+      "caption": "Deployment evaluation reported in Table 2 of the paper [1]. Feedback reflects 20 explicit submissions.",
+      "headers": [
+        "Reported measure",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Evaluation runs",
+          "136"
+        ],
+        [
+          "Average response time",
+          "19.49 seconds"
+        ],
+        [
+          "System error rate",
+          "6.6%"
+        ],
+        [
+          "Explicit feedback submissions",
+          "20"
+        ],
+        [
+          "Positive feedback",
+          "20 of 20"
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "blueprint-rebuilding-a-legacy",
+    "tag": "WACV 2027 · Accepted",
+    "title": "BLUEPRINT: finding the right drawing in a mountain of records",
+    "summary": "A drawing is more than its filename. BLUEPRINT connects what a page says, where it says it, and what an engineer needs to find.",
+    "related": "projects/ai4labops/tools/blueprint/",
+    "reading_time": "2 min read",
+    "announcement": "Accepted at WACV 2027",
+    "sections": [
+      {
+        "heading": "The drawing exists. Finding it is the problem.",
+        "body": "Imagine inheriting a workshop with decades of binders. You need the electrical schematic for one panel and the procedure that goes with it. A filename tells you little; the clue might be a tiny identifier in a corner. Searching every page by hand is like looking for a book when the catalogue has lost its labels."
+      },
+      {
+        "heading": "Read the page like an engineer",
+        "body": "BLUEPRINT first separates drawings from text documents. For drawings, it locates useful regions—such as title blocks and parts lists—and reads those crops. For documents, it extracts text. It combines exact-term and meaning-based search, then reranks matches using regional evidence. [1]"
+      },
+      {
+        "heading": "What changed in the results?",
+        "body": "Table 3 evaluates 375 queries on a 5,000-file benchmark. BLUEPRINT achieves 71.5% Success@3 versus 62.3% for LLaMA 3.2 Vision: a 9.2-percentage-point increase. Its nDCG@3 is 0.626 versus 0.521. Success@3 asks whether a relevant result appears in the first three hits; nDCG also rewards ordering. [1]"
+      },
+      {
+        "heading": "Why it matters",
+        "body": "A useful search system should lead an engineer to the evidence they can inspect. Better localization and OCR remain opportunities for improvement. The operational records are not publicly releasable; the paper discusses a separate unrestricted benchmark. [1]"
+      }
+    ],
+    "figure": {
+      "path": "assets/blog/blueprint-paper-architecture.png",
+      "alt": "Figure 3 from BLUEPRINT: documents follow text and vision paths into a shared index and reranked retrieval.",
+      "caption": "Figure 3 from Seefried et al. [1]: complementary text and vision pipelines feed unified retrieval.",
+      "source": "https://arxiv.org/html/2602.13345v1#S3",
+      "after_section": 1
+    },
+    "results": {
+      "caption": "Retrieval quality reported in Table 3 of arXiv v1 [1]. Higher is better.",
+      "headers": [
+        "System",
+        "Success@3",
+        "nDCG@3"
+      ],
+      "rows": [
+        [
+          "LLaMA 3.2 Vision",
+          "62.3%",
+          "0.521"
+        ],
+        [
+          "BLUEPRINT",
+          "71.5%",
+          "0.626"
+        ]
+      ]
+    },
+    "resources": [
+      {
+        "label": "Read paper (PDF)",
+        "url": "https://arxiv.org/pdf/2602.13345"
+      },
+      {
+        "label": "Paper & metadata",
+        "url": "https://arxiv.org/abs/2602.13345"
+      }
+    ],
+    "github_url": "https://github.com/eseefried/Blueprint",
+    "github_note": "Official GitHub repository link forthcoming.",
+    "bibliography": [
+      {
+        "text": "Ethan Seefried, Ran Eldegaway, Sanjay Das, Nathaniel Blanchard, and Tirthankar Ghosal. 2026. BLUEPRINT Rebuilding a Legacy: Multimodal Retrieval for Complex Engineering Drawings and Documents. arXiv:2602.13345v1.",
+        "url": "https://doi.org/10.48550/arXiv.2602.13345"
+      }
+    ],
+    "provenance": "WACV 2027 acceptance supplied by project owner. Figure 3 and Table 3 from arXiv:2602.13345v1; bibliography preserves the preprint author spellings."
+  },
+  {
+    "slug": "evidence-to-operations",
+    "tag": "Research perspective",
+    "title": "From operational records to evidence-backed intelligence",
+    "summary": "How retrieval, agentic reasoning, and expert oversight come together in AI for Laboratory Operations.",
+    "related": "projects/ai4labops/",
+    "sections": [
+      {
+        "heading": "Start with the evidence",
+        "body": "Laboratory operations draw on engineering records, safety observations, policies, and procedures. AI for Laboratory Operations connects these sources with tools for discovery, safety analysis, and governance."
+      },
+      {
+        "heading": "Different questions, connected research",
+        "body": "BLUEPRINT investigates multimodal retrieval for engineering drawings. SafeLens explores organizational safety records for actionable insights. REFSafE focuses on grounded risk analysis and safety reporting, while ORCHID supports policy-grounded classification of high-risk property."
+      },
+      {
+        "heading": "Built with operational expertise",
+        "body": "The research team works with ORNL Operations collaborators, subject-matter experts, and ITSD software colleagues. Their involvement connects scientific methods with the practical needs of operational users."
+      }
+    ]
+  },
+  {
+    "slug": "trustworthy-hpc-analytics",
+    "tag": "Research perspective",
+    "title": "Trustworthy analytics for HPC operations",
+    "summary": "Introducing two research directions in multi-agent operational analytics and telemetry-informed decisions.",
+    "related": "projects/ai-for-hpc/",
+    "sections": [
+      {
+        "heading": "Beyond retrieving the right records",
+        "body": "Recall Is Not Honesty examines multi-agent architectures for trustworthy HPC operational analytics. The work has been accepted at SC ’26, as reported by the research team."
+      },
+      {
+        "heading": "Toward defensible decisions",
+        "body": "EPIC++ is ongoing research into decentralized multi-agent analytics for job submission decisions on HPC telemetry. It explores how operational evidence can support defensible choices."
+      },
+      {
+        "heading": "Research across institutions",
+        "body": "The supplied author teams connect Oak Ridge National Laboratory, Predii, Lawrence Berkeley National Laboratory, spinTwo, Rensselaer Polytechnic Institute, and AMD."
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+dist/
+__pycache__/
+.DS_Store
+
+# Original recording; the web-optimized MP4 is tracked.
+assets/tools/insights/demo.mov
+*.pyc

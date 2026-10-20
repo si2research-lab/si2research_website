@@ -1,0 +1,493 @@
+[
+  {
+    "slug": "blueprint",
+    "name": "BLUEPRINT",
+    "group": "knowledge-discovery",
+    "icon": "drawing",
+    "summary": "Multimodal retrieval for complex engineering drawings and documents.",
+    "question": "How can researchers find relevant engineering drawings when legacy metadata is incomplete?",
+    "approach": "Layout-aware retrieval combines drawing-region detection, vision-language OCR, normalized identifiers, and lexical and dense search.",
+    "outputs": [
+      "Searchable engineering records",
+      "Structured metadata for legacy archives",
+      "Retrieved drawings and documents"
+    ],
+    "paper": "blueprint",
+    "contributors": [
+      {
+        "name": "Dr. Tirthankar Ghosal",
+        "role": "Principal Investigator \u00b7 Staff Scientist",
+        "photo": "assets/tools/developers/tirthankar.jpg",
+        "email": "ghosalt@ornl.gov"
+      },
+      {
+        "name": "Dr. Ethan Seefried",
+        "role": "Postdoctoral Researcher",
+        "photo": "assets/tools/developers/ethan.png",
+        "email": "seefriedej@ornl.gov"
+      },
+      {
+        "name": "Dr. Ran Edgeway",
+        "role": "PhD GRO intern",
+        "photo": "assets/tools/developers/ran.jpg",
+        "email": "elgedawyr@ornl.gov"
+      },
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      },
+      {
+        "name": "Gavin Wiggins",
+        "role": "Technical support",
+        "photo": "assets/tools/developers/gavin.jpg",
+        "email": "wigginsg@ornl.gov"
+      },
+      {
+        "name": "Dana Hewit",
+        "role": "Collaborator",
+        "photo": "assets/tools/developers/dana.jpg",
+        "email": "dana.hewit@srnl.gov"
+      }
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/eseefried/Blueprint"
+      },
+      {
+        "label": "Research story",
+        "path": "blogs/blueprint-rebuilding-a-legacy/"
+      }
+    ]
+  },
+  {
+    "slug": "refsafe",
+    "name": "REFSafE",
+    "group": "safety-risk",
+    "icon": "shield",
+    "summary": "Evidence-grounded predictive risk analysis and automated safety report generation.",
+    "question": "How can safety reporting remain traceable to operational evidence?",
+    "approach": "Agentic retrieval and generation bring together operational records, historical incidents, and policy evidence. Citation-backed reports and expert feedback support review.",
+    "outputs": [
+      "Evidence-linked safety reports",
+      "Grounded hazard analysis",
+      "Expert-reviewable source attribution"
+    ],
+    "paper": "refsafe",
+    "contributors": [
+      {
+        "name": "Dr. Tirthankar Ghosal",
+        "role": "Principal Investigator \u00b7 Staff Scientist",
+        "photo": "assets/tools/developers/tirthankar.jpg",
+        "email": "ghosalt@ornl.gov"
+      },
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      },
+      {
+        "name": "Dr. Ethan Seefried",
+        "role": "Postdoctoral Researcher",
+        "photo": "assets/tools/developers/ethan.png",
+        "email": "seefriedej@ornl.gov"
+      },
+      {
+        "name": "Dr. Ran Edgeway",
+        "role": "PhD GRO intern",
+        "photo": "assets/tools/developers/ran.jpg",
+        "email": "elgedawyr@ornl.gov"
+      },
+      {
+        "name": "Ryan Burchfield",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/ryan.jpg",
+        "email": "burchfieldra@ornl.gov"
+      },
+      {
+        "name": "Dana Hewit",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/dana.jpg",
+        "email": "dana.hewit@srnl.gov"
+      },
+      {
+        "name": "Gavin Wiggins",
+        "role": "Technical support",
+        "photo": "assets/tools/developers/gavin.jpg",
+        "email": "wigginsg@ornl.gov"
+      }
+    ]
+  },
+  {
+    "slug": "orchid",
+    "name": "ORCHID",
+    "group": "compliance-governance",
+    "icon": "check",
+    "summary": "Retrieval-augmented classification of high-risk property with intelligent decision-making.",
+    "question": "How can high-risk property classification become more traceable and easier for experts to review?",
+    "approach": "Cooperating retrieval, refinement, classification, and validation agents connect item descriptions with policy evidence. Human oversight and audit artifacts support review.",
+    "outputs": [
+      "Policy-grounded classification support",
+      "Expert review for uncertain items",
+      "Auditable evidence bundles"
+    ],
+    "paper": "orchid",
+    "contributors": [
+      {
+        "name": "Dr. Tirthankar Ghosal",
+        "role": "Principal Investigator \u00b7 Staff Scientist",
+        "photo": "assets/tools/developers/tirthankar.jpg",
+        "email": "ghosalt@ornl.gov"
+      },
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      },
+      {
+        "name": "Vanessa Lama (past member)",
+        "role": "Developer / researcher",
+        "photo": "assets/tools/developers/vanessa.png",
+        "email": "lamav@ornl.gov"
+      },
+      {
+        "name": "Maria Mahbub (past member)",
+        "role": "Developer / researcher",
+        "photo": "assets/tools/developers/maria.png",
+        "email": "mahbubm@ornl.gov"
+      },
+      {
+        "name": "Lauren Deck",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/lauren.png",
+        "email": "decklm@ornl.gov"
+      },
+      {
+        "name": "Gavin Wiggins",
+        "role": "Technical support",
+        "photo": "assets/tools/developers/gavin.jpg",
+        "email": "wigginsg@ornl.gov"
+      },
+      {
+        "name": "Dana Hewit",
+        "role": "Collaborator",
+        "photo": "assets/tools/developers/dana.jpg",
+        "email": "dana.hewit@srnl.gov"
+      }
+    ]
+  },
+  {
+    "slug": "chemsafe",
+    "name": "ChemSafe / SafeChem",
+    "group": "safety-risk",
+    "icon": "flask",
+    "summary": "Chemical hazard assessment and evaluation: hybrid retrieval-augmented decision support and safety benchmarking.",
+    "question": "How can hybrid retrieval support laboratory chemical hazard assessment?",
+    "approach": "This project brings together chemical hazard decision support and evaluation. ChemSafe studies hybrid retrieval-augmented laboratory hazard assessment; SafeChem introduces a benchmark for multi-label chemical hazard prediction and LLM safety hallucination evaluation.",
+    "outputs": [
+      "Chemical hazard assessment and decision support",
+      "Multi-label chemical hazard benchmarking",
+      "LLM safety hallucination evaluation"
+    ],
+    "paper": "chemsafe",
+    "contributors": [
+      {
+        "name": "Dr. Tirthankar Ghosal",
+        "role": "Principal Investigator \u00b7 Staff Scientist",
+        "photo": "assets/tools/developers/tirthankar.jpg",
+        "email": "ghosalt@ornl.gov"
+      },
+      {
+        "name": "Dr. Ran Edgeway",
+        "role": "PhD GRO intern",
+        "photo": "assets/tools/developers/ran.jpg",
+        "email": "elgedawyr@ornl.gov"
+      },
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      },
+      {
+        "name": "Subhamay Pramanik",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/subhamay.png",
+        "email": "pramaniks@ornl.gov"
+      },
+      {
+        "name": "Kimberly B Jeskie",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/kim.png",
+        "email": "jeskiekb@ornl.gov"
+      },
+      {
+        "name": "Susan S Fiscor",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/susan.png",
+        "email": "fiscorss@ornl.gov"
+      },
+      {
+        "name": "Gavin Wiggins",
+        "role": "Technical support",
+        "photo": "assets/tools/developers/gavin.jpg",
+        "email": "wigginsg@ornl.gov"
+      },
+      {
+        "name": "Dana Hewit",
+        "role": "Collaborator",
+        "photo": "assets/tools/developers/dana.jpg",
+        "email": "dana.hewit@srnl.gov"
+      }
+    ],
+    "aliases": [
+      "safechem"
+    ]
+  },
+  {
+    "slug": "safelens",
+    "name": "SafeLens",
+    "group": "knowledge-discovery",
+    "icon": "search",
+    "summary": "AI-augmented exploration of organizational safety records for actionable insights.",
+    "question": "How can exploratory analysis reveal useful patterns in organizational safety records?",
+    "approach": "AI-augmented exploratory analysis connects organizational safety records with actionable insights. The published study examines how this evidence can support discovery and analysis of operational safety knowledge.",
+    "outputs": [
+      "Research focus: exploratory safety analysis",
+      "Research focus: actionable insight generation"
+    ],
+    "paper": "safelens",
+    "contributors": [
+      {
+        "name": "Dr. Tirthankar Ghosal",
+        "role": "Principal Investigator \u00b7 Staff Scientist",
+        "photo": "assets/tools/developers/tirthankar.jpg",
+        "email": "ghosalt@ornl.gov"
+      },
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      },
+      {
+        "name": "Ryan Burchfield",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/ryan.jpg",
+        "email": "burchfieldra@ornl.gov"
+      },
+      {
+        "name": "Alan Guy",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/alan.png",
+        "email": "guyas@ornl.gov"
+      },
+      {
+        "name": "Dana Hewit",
+        "role": "Collaborator",
+        "photo": "assets/tools/developers/dana.jpg",
+        "email": "dana.hewit@srnl.gov"
+      }
+    ],
+    "aliases": [
+      "insights"
+    ],
+    "links": [
+      {
+        "label": "Read the research story",
+        "path": "blogs/safelens-reading-between-the-records/"
+      },
+      {
+        "label": "Published paper",
+        "url": "https://doi.org/10.1145/3805696.3846509"
+      }
+    ]
+  },
+  {
+    "slug": "hazdial",
+    "name": "HAZDIAL",
+    "group": "safety-risk",
+    "icon": "dialogue",
+    "summary": "Structured agentic dialogue for hazard identification analysis.",
+    "question": "Can multi-agent, multi-turn dialogue improve hazard identification over single-pass inference?",
+    "approach": "The study compares adversarial debate and constructive discussion, with genetic algorithm-based interaction optimization. Evaluation considers classification quality and dialogue behavior.",
+    "outputs": [
+      "Dialogue-driven hazard analysis",
+      "Comparisons of debate and discussion",
+      "Hazard-identification evaluation"
+    ],
+    "paper": "hazdial",
+    "contributors": []
+  },
+  {
+    "slug": "regchange",
+    "name": "RegChange",
+    "group": "compliance-governance",
+    "icon": "check",
+    "summary": "AI compliance tool that compares regulation versions, maps impacts to internal procedures, and generates change recommendations.",
+    "question": "Regulatory updates\u2014amendments, removals, additions\u2014ripple through dozens of internal procedures. Identifying exactly what changed and what is affected is a manual, weeks-long compliance exercise.",
+    "approach": "Runs an automated multi-stage workflow: regulation diff \u2192 semantic mapping to internal procedures \u2192 agentic impact reasoning \u2192 ranked recommendation generation. Each step is explainable and reviewable.",
+    "outputs": [],
+    "paper": null,
+    "contributors": [
+      {
+        "name": "Dr. Tirthankar Ghosal",
+        "role": "Principal Investigator \u00b7 Staff Scientist",
+        "photo": "assets/tools/developers/tirthankar.jpg",
+        "email": "ghosalt@ornl.gov"
+      },
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      },
+      {
+        "name": "Dr. Ethan Seefried",
+        "role": "Postdoctoral Researcher",
+        "photo": "assets/tools/developers/ethan.png",
+        "email": "seefriedej@ornl.gov"
+      },
+      {
+        "name": "Lauren Deck",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/lauren.png",
+        "email": "decklm@ornl.gov"
+      },
+      {
+        "name": "Ryan Burchfield",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/ryan.jpg",
+        "email": "burchfieldra@ornl.gov"
+      },
+      {
+        "name": "Gavin Wiggins",
+        "role": "Technical support",
+        "photo": "assets/tools/developers/gavin.jpg",
+        "email": "wigginsg@ornl.gov"
+      },
+      {
+        "name": "Dana Hewit",
+        "role": "Collaborator",
+        "photo": "assets/tools/developers/dana.jpg",
+        "email": "dana.hewit@srnl.gov"
+      }
+    ]
+  },
+  {
+    "slug": "policyguard",
+    "name": "PolicyGuard",
+    "group": "compliance-governance",
+    "icon": "check",
+    "summary": "Extracts requirements from DOE orders & eCFR, compares against internal procedures, and maps gaps and conflicts.",
+    "question": "DOE orders and federal regulations contain hundreds of requirements spread across dense legal text. Manually verifying that every requirement is addressed in internal procedures is error-prone and resource-intensive.",
+    "approach": "Extracts structured requirements from DOE orders and eCFR using AI, then semantically maps each requirement against the internal procedure library, flagging agreements, gaps, conflicts, and missing coverage.",
+    "outputs": [],
+    "paper": null,
+    "contributors": [
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      }
+    ]
+  },
+  {
+    "slug": "orimpact",
+    "name": "ORImpact",
+    "group": "compliance-governance",
+    "icon": "check",
+    "summary": "AI decision impact platform that evaluates how operational or policy decisions affect risk posture, compliance, and operations.",
+    "question": "Decision-makers at national labs need to understand the downstream consequences of policy or operational changes\u2014but the web of regulations, procedures, and dependencies is too complex to trace manually.",
+    "approach": "Builds a connected knowledge graph of regulations, policies, and organizational procedures. When a question is posed, RAG retrieval plus agentic reasoning traces the impact pathways and cites each link in the chain.",
+    "outputs": [],
+    "paper": null,
+    "contributors": [
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      }
+    ]
+  },
+  {
+    "slug": "smartinspect",
+    "name": "SmartInspect",
+    "group": "safety-risk",
+    "icon": "shield",
+    "summary": "AI vision tool that analyzes images of any space or equipment with text context to rapidly identify safety hazards.",
+    "question": "Safety inspections at ORNL require trained personnel to manually walk spaces and document hazards. Coverage is incomplete, subjective, and slow\u2014especially for time-sensitive or remote environments.",
+    "approach": "Takes an image of a space or piece of equipment plus optional text context, runs it through a multimodal vision-language model for safety analysis, and outputs a structured hazard analysis with risk scores and corrective actions.",
+    "outputs": [],
+    "paper": null,
+    "contributors": [
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      }
+    ]
+  },
+  {
+    "slug": "causalai",
+    "name": "CausalAI",
+    "group": "safety-risk",
+    "icon": "shield",
+    "summary": "Agentic AI performing 5-Whys root cause analysis and barrier extraction on incident reports.",
+    "question": "Incident reports often contain insufficient detail for root cause analysis. Investigators manually perform barrier extraction and 5-Whys analysis, a process that is time-consuming and inconsistent across analysts.",
+    "approach": "An agentic pipeline extracts barriers and contributing factors from the incident text, then iteratively applies 5-Whys reasoning. The agent asks the user targeted clarifying questions when evidence is insufficient.",
+    "outputs": [],
+    "paper": null,
+    "contributors": []
+  },
+  {
+    "slug": "qualityai",
+    "name": "QualityAI",
+    "group": "compliance-governance",
+    "icon": "check",
+    "summary": "AI anomaly detection for procurement that flags items incorrectly classified as quality-insignificant before they slip through.",
+    "question": "Quality experts cannot review every item passing through procurement. Items misclassified as quality-insignificant escape review, creating downstream safety and compliance risks.",
+    "approach": "Applies AI-based anomaly detection to procurement item records, scoring each item against learned patterns of quality-significant behavior. Flagged items are routed to an expert review queue with confidence scores and explanations.",
+    "outputs": [],
+    "paper": null,
+    "contributors": [
+      {
+        "name": "Dr. Tirthankar Ghosal",
+        "role": "Principal Investigator \u00b7 Staff Scientist",
+        "photo": "assets/tools/developers/tirthankar.jpg",
+        "email": "ghosalt@ornl.gov"
+      },
+      {
+        "name": "Dr. Sanjay Das",
+        "role": "Postdoctoral Researcher \u00b7 Lead R&D personnel",
+        "photo": "assets/tools/developers/sanjay.jpg",
+        "email": "dass3@ornl.gov"
+      },
+      {
+        "name": "Ryan Burchfield",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/ryan.jpg",
+        "email": "burchfieldra@ornl.gov"
+      },
+      {
+        "name": "Joe L Tollett",
+        "role": "Subject-matter expert",
+        "photo": "",
+        "email": "tollettjl@ornl.gov"
+      },
+      {
+        "name": "Keith A Gostelow",
+        "role": "Subject-matter expert",
+        "photo": "assets/tools/developers/keith.png",
+        "email": "gostelowka@ornl.gov"
+      }
+    ]
+  }
+]

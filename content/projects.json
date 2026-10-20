@@ -1,0 +1,25 @@
+[
+  {
+    "slug": "ai4labops",
+    "title": "AI for Laboratory Operations",
+    "area": "labops",
+    "summary": "AI for laboratory operations: knowledge discovery, safety intelligence, and accountable decision support.",
+    "status": "Research portfolio",
+    "body": "AI for Laboratory Operations brings together research on retrieval, agentic reasoning, safety analysis, and governance to support operational excellence and predictive maintenance in laboratory environments.",
+    "contributors": [],
+    "links": []
+  },
+  {
+    "slug": "ai-for-hpc",
+    "title": "AI for HPC",
+    "area": "hpc",
+    "summary": "Trustworthy multi-agent operational analytics and telemetry-informed decision support for high-performance computing.",
+    "status": "Research portfolio",
+    "body": "Our AI for HPC research explores trustworthy operational analytics, multi-agent architectures, and defensible decisions from HPC telemetry.",
+    "contributors": [
+      "Tirthankar Ghosal",
+      "Sanjay Das"
+    ],
+    "links": []
+  }
+]

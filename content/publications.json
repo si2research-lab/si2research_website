@@ -1,0 +1,91 @@
+[
+  {
+    "id": "refsafe",
+    "title": "REFSafE: A RAG-Enabled Framework for Predictive Risk Analysis and Automated Safety Report Generation in Mission-Critical Environments",
+    "authors": "Sanjay Das et al.",
+    "venue": "RAG4Reports",
+    "status": "Published",
+    "url": "https://aclanthology.org/2026.rag4reports-1.6/",
+    "pages": "47–56",
+    "year": 2026,
+    "tool": "refsafe",
+    "provenance": "Public record verified"
+  },
+  {
+    "id": "orchid",
+    "title": "ORCHID: Orchestrated Retrieval-Augmented Classification of High-Risk Property with Intelligent Decision-Making",
+    "authors": "Sanjay Das et al.",
+    "venue": "RAG4Reports",
+    "status": "Published",
+    "url": "https://aclanthology.org/2026.rag4reports-1.7/",
+    "pages": "57–64",
+    "year": 2026,
+    "tool": "orchid",
+    "provenance": "Public record verified"
+  },
+  {
+    "id": "blueprint",
+    "title": "BLUEPRINT Rebuilding a Legacy: Multimodal Retrieval for Complex Engineering Drawings and Documents",
+    "authors": "Ethan Seefried et al.",
+    "venue": "WACV 2027",
+    "status": "Accepted",
+    "url": "https://arxiv.org/abs/2602.13345",
+    "pages": "",
+    "year": 2027,
+    "tool": "blueprint",
+    "provenance": "WACV 2027 acceptance supplied by the project owner; linked manuscript is the arXiv preprint"
+  },
+  {
+    "id": "chemsafe",
+    "title": "ChemSafe: Hybrid Retrieval-Augmented Decision Support for Laboratory Chemical Hazard Assessment",
+    "authors": "Ran Elgedawy et al.",
+    "venue": "JCDL",
+    "status": "Published",
+    "url": "https://doi.org/10.1145/3805696.3846505",
+    "pages": "",
+    "year": 2026,
+    "tool": "chemsafe",
+    "provenance": "Publication DOI supplied by the project owner",
+    "doi": "10.1145/3805696.3846505"
+  },
+  {
+    "id": "safechem",
+    "title": "SafeChem: A Benchmark Dataset for Multi-Label Chemical Hazard Prediction and LLM Safety Hallucination Evaluation",
+    "authors": "Ran Elgedawy et al.",
+    "venue": "ChemRxiv",
+    "status": "Preprint",
+    "url": "https://chemrxiv.org/doi/pdf/10.26434/chemrxiv.15007436",
+    "pages": "",
+    "year": 2026,
+    "tool": "chemsafe",
+    "provenance": "Preprint DOI supplied by the project owner; NeurIPS submission previously supplied",
+    "doi": "10.26434/chemrxiv.15007436",
+    "submission_status": "Submitted to NeurIPS"
+  },
+  {
+    "id": "safelens",
+    "title": "SafeLens: AI-Augmented Exploratory Analysis over Organizational Safety Records for Actionable Insights Generation",
+    "authors": "Sanjay Das, Ryan Burchfield, Gavin Wiggins, Alan Guy, and Tirthankar Ghosal",
+    "venue": "JCDL",
+    "status": "Published",
+    "url": "https://doi.org/10.1145/3805696.3846509",
+    "pages": "",
+    "year": 2026,
+    "tool": "safelens",
+    "provenance": "Publication status and DOI supplied by the authors",
+    "doi": "10.1145/3805696.3846509",
+    "blog_path": "blogs/safelens-reading-between-the-records/"
+  },
+  {
+    "id": "hazdial",
+    "title": "Enhancing Operational Safety via Agentic Dialogue Hazard Identification Analysis",
+    "authors": "Sanjay Das, Ran Elgedawy, Ethan Seefried, Ryan Burchfield, and Tirthankar Ghosal",
+    "venue": "SIGDIAL",
+    "status": "Published",
+    "url": "https://aclanthology.org/2026.sigdial-1.53/",
+    "pages": "757–772",
+    "year": 2026,
+    "tool": "hazdial",
+    "provenance": "Public record verified"
+  }
+]

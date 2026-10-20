@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "labops",
+    "title": "AI for Laboratory Operations",
+    "summary": "Intelligence for the everyday complexity of scientific facilities.",
+    "icon": "layers",
+    "color": "teal"
+  },
+  {
+    "slug": "hpc",
+    "title": "AI for HPC",
+    "summary": "Exploring the intersection of AI and high-performance computing.",
+    "icon": "chip",
+    "color": "blue"
+  },
+  {
+    "slug": "autonomous",
+    "title": "Autonomous Labs",
+    "summary": "Connecting scientific reasoning, experimentation, and discovery.",
+    "icon": "flask",
+    "color": "purple"
+  },
+  {
+    "slug": "quantum",
+    "title": "Quantum",
+    "summary": "Quantum research, verification, validation, and Quantum Claw.",
+    "icon": "atom",
+    "color": "pink"
+  },
+  {
+    "slug": "manufacturing",
+    "title": "Smart Manufacturing",
+    "summary": "Bringing intelligent systems into manufacturing research.",
+    "icon": "cube",
+    "color": "orange"
+  }
+]

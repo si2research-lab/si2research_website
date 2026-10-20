@@ -1,0 +1,120 @@
+[
+  {
+    "slug": "recall-is-not-honesty",
+    "title": "Recall Is Not Honesty: Benchmarking Multi-Agent Architectures for Trustworthy HPC Operational Analytics",
+    "short_title": "Recall Is Not Honesty",
+    "summary": "Benchmarking multi-agent architectures for trustworthy HPC operational analytics.",
+    "status": "Accepted",
+    "venue": "SC ’26",
+    "year": 2026,
+    "question": "How should multi-agent architectures be benchmarked for trustworthy HPC operational analytics?",
+    "body": "This research examines trustworthiness in multi-agent analytics for high-performance computing operations. The work frames recall and honesty as distinct concerns in evaluating operational analytics. Detailed methods, benchmark results, and artifacts will be added with the manuscript.",
+    "authors": [
+      {
+        "name": "Kartik Shinde",
+        "affiliation": "Predii Inc."
+      },
+      {
+        "name": "Tirthankar Ghosal",
+        "affiliation": "Oak Ridge National Laboratory"
+      },
+      {
+        "name": "Sreekantam Sai Venkat",
+        "affiliation": "Predii Inc."
+      },
+      {
+        "name": "Siddhant Senapati",
+        "affiliation": "Predii Inc."
+      },
+      {
+        "name": "Sanjay Das",
+        "affiliation": "Oak Ridge National Laboratory"
+      },
+      {
+        "name": "Tilak Kasturi",
+        "affiliation": "Predii Inc."
+      },
+      {
+        "name": "Khaled Z. Ibrahim",
+        "affiliation": "Lawrence Berkeley National Laboratory"
+      },
+      {
+        "name": "Hugo Hernandez",
+        "affiliation": "spinTwo LLC"
+      },
+      {
+        "name": "Kanad Basu",
+        "affiliation": "Rensselaer Polytechnic Institute"
+      },
+      {
+        "name": "Sreenivas Rangan Sukumar",
+        "affiliation": "Advanced Micro Devices"
+      }
+    ],
+    "equal_contribution": [
+      "Kartik Shinde",
+      "Tirthankar Ghosal"
+    ],
+    "url": "",
+    "provenance": "Title, author list, affiliations, and SC ’26 acceptance supplied by the project owner"
+  },
+  {
+    "slug": "epic-plus-plus",
+    "title": "EPIC++: Decentralized Multi-Agent Analytics for Defensible Job Submission Decisions on HPC Telemetry",
+    "short_title": "EPIC++",
+    "summary": "Decentralized multi-agent analytics for defensible job submission decisions using HPC telemetry.",
+    "status": "Ongoing",
+    "venue": "",
+    "year": null,
+    "question": "How can decentralized multi-agent analytics support defensible job submission decisions from HPC telemetry?",
+    "body": "EPIC++ investigates decentralized multi-agent analytics over HPC telemetry to support job submission decisions. This ongoing research focuses on defensible operational decisions. Methods, evaluation details, and artifacts will be added as the work develops.",
+    "authors": [
+      {
+        "name": "Kartik Shinde",
+        "affiliation": "Predii Inc."
+      },
+      {
+        "name": "Tirthankar Ghosal",
+        "affiliation": "Oak Ridge National Laboratory"
+      },
+      {
+        "name": "Siddhant Senapati",
+        "affiliation": "Predii Inc."
+      },
+      {
+        "name": "Sreekantam Sai Venkat",
+        "affiliation": "Predii Inc."
+      },
+      {
+        "name": "Sanjay Das",
+        "affiliation": "Oak Ridge National Laboratory"
+      },
+      {
+        "name": "Tilak Kasturi",
+        "affiliation": "Predii Inc."
+      },
+      {
+        "name": "Khaled Ibrahim",
+        "affiliation": "Lawrence Berkeley National Laboratory"
+      },
+      {
+        "name": "Hugo Hernández",
+        "affiliation": "spinTwo LLC"
+      },
+      {
+        "name": "Kanad Basu",
+        "affiliation": "Rensselaer Polytechnic Institute"
+      },
+      {
+        "name": "Sukumar Rangan",
+        "affiliation": "Advanced Micro Devices"
+      }
+    ],
+    "equal_contribution": [
+      "Kartik Shinde",
+      "Tirthankar Ghosal"
+    ],
+    "url": "",
+    "provenance": "Ongoing research title and author list supplied by the project owner; affiliations follow the supplied institutional key"
+  }
+]

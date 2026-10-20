@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "knowledge-discovery",
+    "title": "Knowledge Discovery",
+    "color": "blue",
+    "icon": "search",
+    "summary": "Discover engineering knowledge and actionable insights across laboratory records.",
+    "question": "How can multimodal retrieval recover useful knowledge from heterogeneous laboratory records?",
+    "focus": [
+      "Engineering drawings and technical documents",
+      "Layout-aware multimodal retrieval",
+      "Evidence discovery across legacy archives",
+      "Exploratory analysis of organizational safety records"
+    ]
+  },
+  {
+    "slug": "safety-risk",
+    "title": "Safety & Risk Intelligence",
+    "color": "orange",
+    "icon": "shield",
+    "summary": "Connect operational evidence with hazard assessment and actionable safety insights.",
+    "question": "How can grounded retrieval and agentic reasoning support reliable hazard analysis?",
+    "focus": [
+      "Evidence-grounded risk analysis and reporting",
+      "Chemical hazard assessment and safety evaluation",
+      "Dialogue-based hazard identification"
+    ]
+  },
+  {
+    "slug": "compliance-governance",
+    "title": "Compliance & Governance",
+    "color": "teal",
+    "icon": "check",
+    "summary": "Support traceable classification and human review in laboratory governance.",
+    "question": "How can AI assist policy-grounded decisions while preserving expert oversight and auditability?",
+    "focus": [
+      "High-risk property classification",
+      "Policy-grounded evidence retrieval",
+      "Human oversight and auditable decisions"
+    ]
+  }
+]
