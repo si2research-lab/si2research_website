@@ -8,7 +8,7 @@ from acknowledgments import render_summary
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT/'dist'
 def read(name): return json.loads((ROOT/'content'/f'{name}.json').read_text())
-site=read('site'); projects=read('projects'); areas=[a for a in read('areas') if any(p['area']==a['slug'] for p in projects)]; initiatives=[]; amap={a['slug']:a for a in areas}
+site=read('site'); projects=read('projects'); areas=read('areas'); initiatives=[]; amap={a['slug']:a for a in areas}
 tool_slugs={t['slug'] for t in read('labops_tools')}
 hpc_slugs={p['slug'] for p in read('hpc_research')}
 discover(ROOT, {p['slug'] for p in projects} | tool_slugs | hpc_slugs)
@@ -54,7 +54,8 @@ def network_art(link):
   art=art.replace('href="../research/'+slug+'/"','href="'+link('research/'+slug+'/')+'"')
  return art
 def home(link):
- return '<section class="hero"><div class="wrap"><div class="eyebrow">SI² Research</div><h1>SuperIntelligence<br><em>for Science.</em></h1><p>Research in trustworthy AI for scientific computing and laboratory operations.</p><div class="actions"><a class="button" href="'+link('projects/')+'">Explore research →</a><a class="button secondary" href="'+link('publications/')+'">Publications</a></div></div></section>'+home_spotlight(link)+section('<div class="section-heading"><h2>Research areas</h2></div>'+area_cards(link))
+ nodes=''.join(f'<a class="node n{n}" href="{link("research/"+a["slug"]+"/")}">{icon(a)}<span>{esc(a["title"])}</span></a>' for n,a in enumerate(areas,1))
+ return '<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">SI² Research</div><h1>SuperIntelligence<br><em>for Science.</em></h1><p>Research in AI for science, engineering, and autonomous discovery—from computing and quantum systems to laboratories and manufacturing.</p><div class="actions"><a class="button" href="'+link('projects/')+'">Explore research →</a><a class="button secondary" href="'+link('publications/')+'">Publications</a></div></div><div class="constellation" aria-label="Explore our connected research areas">'+network_art(link)+'<div class="network-areas">'+nodes+'</div></div></div></section>'+section('<div class="section-heading"><h2>Research areas</h2></div>'+area_cards(link))+home_spotlight(link)
 def catalogue(link):
  filters='<div class="filters" role="group" aria-label="Filter projects by research area"><button data-filter="all" aria-pressed="true">All projects</button>'+''.join(f'<button data-filter="{a["slug"]}" aria-pressed="false">{a["title"]}</button>' for a in areas)+'</div>'
  return hero('Our projects','Explore the ideas, tools, and research taking shape across SI².',link)+section('<div class="search-row"><label for="project-search" class="eyebrow">Find a project</label><input id="project-search" type="search" placeholder="Search by name or topic…"><span id="result-count" role="status"></span></div>'+filters+'<div class="project-grid">'+''.join(card(p,link) for p in projects)+'</div><p id="empty-results" role="status" hidden>No projects match. Try another search or research area.</p>')
@@ -62,10 +63,14 @@ if OUT.exists():shutil.rmtree(OUT)
 OUT.mkdir();shutil.copytree(ROOT/'assets',OUT/'assets',ignore=shutil.ignore_patterns('*.mov'));(OUT/'.nojekyll').touch()
 shutil.copytree(ROOT/'artifacts',OUT/'artifacts')
 page('','Home','home',home)
-page('research','Research','research',lambda l:hero('Research without silos','Trustworthy AI for scientific computing and laboratory operations.',l)+section(area_cards(l)))
+page('research','Research','research',lambda l:hero('Research without silos','AI for scientific computing, laboratory operations, autonomous experimentation, quantum systems, and manufacturing.',l)+section(area_cards(l)))
 page('projects','Projects','projects',catalogue)
 for a in areas:
- page('research/'+a['slug'],a['title'],'research',lambda l,a=a:hero(a['title'],a['summary'],l,('research/','Research'))+section(f'<div class="section-heading"><div>{icon(a)}<h2>Projects in this area</h2></div></div><div class="project-grid">'+''.join(card(p,l) for p in projects if p['area']==a['slug'])+'</div>'))
+ def area_detail(l,a=a):
+  selected=[p for p in projects if p['area']==a['slug']]
+  body=section('<div class="section-heading"><h2>Projects in this area</h2></div><div class="project-grid">'+''.join(card(p,l) for p in selected)+'</div>') if selected else ''
+  return hero(a['title'],a['summary'],l,('research/','Research'))+body
+ page('research/'+a['slug'],a['title'],'research',area_detail)
 for p in projects:
  if p['slug'] in ('ai4labops','ai-for-hpc'): continue
  def detail(l,p=p):
