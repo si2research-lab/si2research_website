@@ -1,6 +1,6 @@
 # SI² Research
 
-Website: **https://si2research-lab.github.io/**
+Website: **https://si2research.github.io/**
 
 Compact research website for **SuperIntelligence for Science**. Python 3.12+ and the standard library build the site; no dependencies or database are needed.
 
@@ -72,8 +72,8 @@ Choose an area from `content/areas.json`. The project card, detail page, researc
 ## Preview and validate
 
 ```bash
-git clone https://github.com/si2research-lab/si2research-lab.github.io.git
-cd si2research-lab.github.io
+git clone https://github.com/si2research/si2research.github.io.git
+cd si2research.github.io
 python3 build.py
 python3 check.py
 python3 -m http.server 8000 --directory dist
@@ -83,12 +83,12 @@ Visit http://localhost:8000. Rebuild after changes. Validation checks artifact f
 
 ## GitHub Pages setup (maintainer, once)
 
-1. Open [Settings → Pages](https://github.com/si2research-lab/si2research-lab.github.io/settings/pages).
+1. Open [Settings → Pages](https://github.com/si2research/si2research.github.io/settings/pages).
 2. Under **Build and deployment → Source**, select **GitHub Actions**. Do **not** select “Deploy from a branch”: the repository contains Python source, and branch publishing renders this README instead of the generated website.
-3. Open [Actions → Deploy SI² to GitHub Pages](https://github.com/si2research-lab/si2research-lab.github.io/actions/workflows/deploy.yml) and choose **Run workflow** on `main`, or push a change to `main`.
-4. Wait for the deployment to succeed, then visit **https://si2research-lab.github.io/**.
+3. Open [Actions → Deploy SI² to GitHub Pages](https://github.com/si2research/si2research.github.io/actions/workflows/deploy.yml) and choose **Run workflow** on `main`, or push a change to `main`.
+4. Wait for the deployment to succeed, then visit **https://si2research.github.io/**.
 
-The workflow builds and checks `dist/`, then publishes that generated directory. Keep `dist/` ignored. The repository name `si2research-lab.github.io` gives the organization its root website URL; no repository suffix is needed.
+The workflow builds and checks `dist/`, then publishes that generated directory. Keep `dist/` ignored. The repository name `si2research.github.io` gives the organization its root website URL; no repository suffix is needed.
 
 ### If the homepage shows the README or project links return 404
 
