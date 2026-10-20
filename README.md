@@ -1,5 +1,7 @@
 # SI² Research
 
+Website: **https://si2research-lab.github.io/**
+
 Compact research website for **SuperIntelligence for Science**. Python 3.12+ and the standard library build the site; no dependencies or database are needed.
 
 ## Contribute through GitHub
@@ -70,8 +72,8 @@ Choose an area from `content/areas.json`. The project card, detail page, researc
 ## Preview and validate
 
 ```bash
-git clone https://github.com/si2research-lab/si2research_website.git
-cd si2research_website
+git clone https://github.com/si2research-lab/si2research-lab.github.io.git
+cd si2research-lab.github.io
 python3 build.py
 python3 check.py
 python3 -m http.server 8000 --directory dist
@@ -81,6 +83,13 @@ Visit http://localhost:8000. Rebuild after changes. Validation checks artifact f
 
 ## GitHub Pages setup (maintainer, once)
 
-In **Settings → Pages → Build and deployment**, select **GitHub Actions**. Push to `main` or run **Deploy SI² to GitHub Pages** manually. The included workflow builds, checks, and deploys `dist/`; relative URLs work under the repository subpath. Expected URL: https://si2research-lab.github.io/si2research_website/ (available after a successful deployment).
+1. Open [Settings → Pages](https://github.com/si2research-lab/si2research-lab.github.io/settings/pages).
+2. Under **Build and deployment → Source**, select **GitHub Actions**. Do **not** select “Deploy from a branch”: the repository contains Python source, and branch publishing renders this README instead of the generated website.
+3. Open [Actions → Deploy SI² to GitHub Pages](https://github.com/si2research-lab/si2research-lab.github.io/actions/workflows/deploy.yml) and choose **Run workflow** on `main`, or push a change to `main`.
+4. Wait for the deployment to succeed, then visit **https://si2research-lab.github.io/**.
 
-The original source remains in `sivectra-website`; this repository is an independent, cleaned copy. Generated output, draft notes, source Git history, and the large original MOV recording were excluded. Existing research claims and author-provided publication statuses were retained.
+The workflow builds and checks `dist/`, then publishes that generated directory. Keep `dist/` ignored. The repository name `si2research-lab.github.io` gives the organization its root website URL; no repository suffix is needed.
+
+### If the homepage shows the README or project links return 404
+
+Confirm **Pages → Source → GitHub Actions** first. Branch publishing and the custom deployment workflow can overwrite each other when both are active. After correcting the source, rerun **Deploy SI² to GitHub Pages** and check its final deployment result. A successful **Check website** run validates the source but does not publish it.
